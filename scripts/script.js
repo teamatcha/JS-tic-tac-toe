@@ -11,7 +11,6 @@ const restartGame = () => {
     });
 }
 
-
 const boardGame = (() => {
     const board = (length, element) => Array.from({length}, () => element);
     
@@ -77,22 +76,23 @@ const placeMaker = (name) => {
         ];
 
         for(var i=0; i< winningCombo.length; i++){
-            if (winningCombo[i].every(everyValue))
-            if(winningCombo[i][0] == winningCombo[i][1] && winningCombo[i][0] == winningCombo[i][2] ){
+            if(winningCombo[i][0] == winningCombo[i][1] && winningCombo[i][0] == winningCombo[i][2] && winningCombo[i].every(everyValue)){
                 alert("win !")
                 document.querySelectorAll(".cell-class").forEach((button) => {
                     button.setAttribute("disabled","disabled")
                 })
-
+                true
             }
+        }
+
+        if(board.every(everyValue)){
+            alert("draw !")
         }
         
     }
 
     return {player, toto, checkWin}
 }
-
-
 
 
 const play = () => {
@@ -112,34 +112,3 @@ const play = () => {
 
 play();
 
-
-/*
-function test(){
-    document.querySelector("#grid-container").
-}*/
-
-/*
-const luffy = placeMaker('Luffy')
-luffy.toto();
-//test()
-console.log( board[0])
-*/
-
-/*board = boardGame.board(9,"-")
-board[0] = "yoyo"
-console.log( board)
-boardGame.makeCell(board);
-
-titi = ["a","b","c","d","e","r"]
-newnew = []
-
-console.log("titi")
-*//*console.log(titi)
-
-console.log(newnew.push(titi.splice(0,2)))
-console.log(titi)
-console.log(newnew.push(titi.splice(0,2)))
-console.log(titi)
-console.log(newnew.push(titi.splice(0,2)))
-
-console.log(newnew)*/
