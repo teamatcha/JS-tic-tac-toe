@@ -16,3 +16,16 @@
     padding: 60px 0;
 
 }
+
+#players-container{
+    display: flex;
+  /*  border-style: dashed;
+    */height: 10%;
+    margin-bottom : 30px;
+}
+
+.player-contain{
+    border-style: ridge;
+    height : 100%;
+    width: 20%;
+}
