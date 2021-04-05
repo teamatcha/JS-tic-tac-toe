@@ -1,0 +1,18 @@
+#grid-container{
+    display: grid;
+    grid-template-columns : repeat(3,1fr);
+    grid-template-rows : repeat(3,1fr);
+    align-content: center;
+   /* display: flexbox;
+    height : 30em;*/
+    height: 50%;
+    width: 50%;
+}
+
+
+.cell-class{
+    border-style: double;
+    text-align: center;
+    padding: 60px 0;
+
+}
