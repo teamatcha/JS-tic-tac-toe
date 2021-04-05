@@ -1,3 +1,8 @@
+#body-container{
+    text-align: center;
+    height: 100%;
+
+}
 #grid-container{
     display: grid;
     grid-template-columns : repeat(3,1fr);
@@ -7,25 +12,33 @@
     height : 30em;*/
     height: 50%;
     width: 50%;
+    margin-left: 25%;
 }
 
 
 .cell-class{
-    border-style: double;
     text-align: center;
     padding: 60px 0;
+    font-size: 100%;
 
 }
 
 #players-container{
     display: flex;
-  /*  border-style: dashed;
-    */height: 10%;
+    height: 10%;
+    width: 50%;
     margin-bottom : 30px;
+    margin-left: 25%;
+
 }
 
 .player-contain{
     border-style: ridge;
-    height : 100%;
-    width: 20%;
+    width: 50%;
+}
+
+#resetGame{
+    width: 50%;
+    height: 30px;
+    margin-bottom: 20px;
 }
